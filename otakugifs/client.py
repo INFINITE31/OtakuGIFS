@@ -787,9 +787,3 @@ class OtakuGIFS:
             str: URL of the yes reaction image.
         """
         return self._request("GET", "yes", format)
-    
-    def __version__(self):
-        from __init__ import __version__
-        return __version__
-
-
