@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 classifiers = [
     'Development Status :: 1 - Planning',
     'Intended Audience :: Developers',
-    'Operating System :: Microsoft :: Windows :: Windows 10',
+    'Operating System :: Microsoft :: Windows :: Windows 11',
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3'
 ]
@@ -13,7 +13,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="OTAKUGIFS",
-    version="1.0.3",
+    version="1.0.4",
     author="INFINITE_.",
     author_email="work4infinite@gmail.com",
     description="A Python wrapper for the OtakuGIFS API",

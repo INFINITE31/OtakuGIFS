@@ -9,16 +9,16 @@ pip install otakugifs
 
 ### How to use
 
-#### Step 1
-Import OTAKUGIFS and create an instance.
+#### Initializing
+Import otakugifs and create an instance.
 ```py 
 from otakugifs import OtakuGIFS
 gifs = OtakuGIFS()
 ```
 
 
-#### Step 2
-Call the method for your corresponding gif reaction. For example if you want a reaction for hug you can do this:
+#### Requesting
+Call the method for your correspondingreaction. For example if you want a reaction for hug you will do this:
 ```py
 gifs.hug(format="GIF")
 ```

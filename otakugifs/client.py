@@ -82,7 +82,7 @@ class OtakuGIFS:
     def __init__(self):
         self._base_url = "https://api.otakugifs.xyz/gif".rstrip('/')
 
-    def _request(self, method: str, endpoint: str, format: str = "GIF"):
+    def _request(self, method: str, endpoint: str, format: str = "GIF") -> str:
         url = f"{self._base_url}?reaction={endpoint}&format={format}"
         try:
             with httpx.Client() as client:
@@ -98,7 +98,7 @@ class OtakuGIFS:
             print(f"An error occurred while requesting {e.request.url!r}.")
             raise
 
-    def airkiss(self, format: str = "GIF"):
+    def airkiss(self, format: str = "GIF") -> str:
         """
         Generate a airkiss reaction.
         Args:
@@ -108,7 +108,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "airkiss", format)
 
-    def angrystare(self, format: str = "GIF"):
+    def angrystare(self, format: str = "GIF") -> str:
         """
         Generate a angrystare reaction.
         Args:
@@ -118,7 +118,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "angrystare", format)
 
-    def bite(self, format: str = "GIF"):
+    def bite(self, format: str = "GIF") -> str:
         """
         Generate a bite reaction.
         Args:
@@ -128,7 +128,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "bite", format)
 
-    def bleh(self, format: str = "GIF"):
+    def bleh(self, format: str = "GIF") -> str:
         """
         Generate a bleh reaction.
         Args:
@@ -138,7 +138,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "bleh", format)
 
-    def blush(self, format: str = "GIF"):
+    def blush(self, format: str = "GIF") -> str:
         """
         Generate a blush reaction.
         Args:
@@ -148,7 +148,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "blush", format)
 
-    def brofist(self, format: str = "GIF"):
+    def brofist(self, format: str = "GIF") -> str:
         """
         Generate a brofist reaction.
         Args:
@@ -158,7 +158,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "brofist", format)
 
-    def celebrate(self, format: str = "GIF"):
+    def celebrate(self, format: str = "GIF") -> str:
         """
         Generate a celebrate reaction.
         Args:
@@ -168,7 +168,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "celebrate", format)
 
-    def cheers(self, format: str = "GIF"):
+    def cheers(self, format: str = "GIF") -> str:
         """
         Generate a cheers reaction.
         Args:
@@ -178,7 +178,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "cheers", format)
 
-    def clap(self, format: str = "GIF"):
+    def clap(self, format: str = "GIF") -> str:
         """
         Generate a clap reaction.
         Args:
@@ -188,7 +188,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "clap", format)
 
-    def confused(self, format: str = "GIF"):
+    def confused(self, format: str = "GIF") -> str:
         """
         Generate a confused reaction.
         Args:
@@ -198,7 +198,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "confused", format)
 
-    def cool(self, format: str = "GIF"):
+    def cool(self, format: str = "GIF") -> str:
         """
         Generate a cool reaction.
         Args:
@@ -208,7 +208,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "cool", format)
 
-    def cry(self, format: str = "GIF"):
+    def cry(self, format: str = "GIF") -> str:
         """
         Generate a cry reaction.
         Args:
@@ -218,7 +218,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "cry", format)
 
-    def cuddle(self, format: str = "GIF"):
+    def cuddle(self, format: str = "GIF") -> str:
         """
         Generate a cuddle reaction.
         Args:
@@ -228,7 +228,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "cuddle", format)
 
-    def dance(self, format: str = "GIF"):
+    def dance(self, format: str = "GIF") -> str:
         """
         Generate a dance reaction.
         Args:
@@ -238,7 +238,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "dance", format)
 
-    def drool(self, format: str = "GIF"):
+    def drool(self, format: str = "GIF") -> str:
         """
         Generate a drool reaction.
         Args:
@@ -248,7 +248,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "drool", format)
 
-    def evillaugh(self, format: str = "GIF"):
+    def evillaugh(self, format: str = "GIF") -> str:
         """
         Generate a evillaugh reaction.
         Args:
@@ -258,7 +258,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "evillaugh", format)
 
-    def facepalm(self, format: str = "GIF"):
+    def facepalm(self, format: str = "GIF") -> str:
         """
         Generate a facepalm reaction.
         Args:
@@ -268,7 +268,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "facepalm", format)
 
-    def handhold(self, format: str = "GIF"):
+    def handhold(self, format: str = "GIF") -> str:
         """
         Generate a handhold reaction.
         Args:
@@ -278,7 +278,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "handhold", format)
 
-    def happy(self, format: str = "GIF"):
+    def happy(self, format: str = "GIF") -> str:
         """
         Generate a happy reaction.
         Args:
@@ -288,7 +288,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "happy", format)
 
-    def headbang(self, format: str = "GIF"):
+    def headbang(self, format: str = "GIF") -> str:
         """
         Generate a headbang reaction.
         Args:
@@ -298,7 +298,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "headbang", format)
 
-    def hug(self, format: str = "GIF"):
+    def hug(self, format: str = "GIF") -> str:
         """
         Generate a hug reaction.
         Args:
@@ -308,7 +308,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "hug", format)
 
-    def huh(self, format: str = "GIF"):
+    def huh(self, format: str = "GIF") -> str:
         """
         Generate a huh reaction.
         Args:
@@ -318,7 +318,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "huh", format)
 
-    def kiss(self, format: str = "GIF"):
+    def kiss(self, format: str = "GIF") -> str:
         """
         Generate a kiss reaction.
         Args:
@@ -328,7 +328,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "kiss", format)
 
-    def laugh(self, format: str = "GIF"):
+    def laugh(self, format: str = "GIF") -> str:
         """
         Generate a laugh reaction.
         Args:
@@ -338,7 +338,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "laugh", format)
 
-    def lick(self, format: str = "GIF"):
+    def lick(self, format: str = "GIF") -> str:
         """
         Generate a lick reaction.
         Args:
@@ -348,7 +348,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "lick", format)
 
-    def love(self, format: str = "GIF"):
+    def love(self, format: str = "GIF") -> str:
         """
         Generate a love reaction.
         Args:
@@ -358,7 +358,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "love", format)
 
-    def mad(self, format: str = "GIF"):
+    def mad(self, format: str = "GIF") -> str:
         """
         Generate a mad reaction.
         Args:
@@ -368,7 +368,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "mad", format)
 
-    def nervous(self, format: str = "GIF"):
+    def nervous(self, format: str = "GIF") -> str:
         """
         Generate a nervous reaction.
         Args:
@@ -378,7 +378,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "nervous", format)
 
-    def no(self, format: str = "GIF"):
+    def no(self, format: str = "GIF") -> str:
         """
         Generate a no reaction.
         Args:
@@ -388,7 +388,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "no", format)
 
-    def nom(self, format: str = "GIF"):
+    def nom(self, format: str = "GIF") -> str:
         """
         Generate a nom reaction.
         Args:
@@ -398,7 +398,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "nom", format)
 
-    def nosebleed(self, format: str = "GIF"):
+    def nosebleed(self, format: str = "GIF") -> str:
         """
         Generate a nosebleed reaction.
         Args:
@@ -408,7 +408,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "nosebleed", format)
 
-    def nuzzle(self, format: str = "GIF"):
+    def nuzzle(self, format: str = "GIF") -> str:
         """
         Generate a nuzzle reaction.
         Args:
@@ -418,7 +418,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "nuzzle", format)
 
-    def nyah(self, format: str = "GIF"):
+    def nyah(self, format: str = "GIF") -> str:
         """
         Generate a nyah reaction.
         Args:
@@ -428,7 +428,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "nyah", format)
 
-    def pat(self, format: str = "GIF"):
+    def pat(self, format: str = "GIF") -> str:
         """
         Generate a pat reaction.
         Args:
@@ -438,7 +438,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "pat", format)
 
-    def peek(self, format: str = "GIF"):
+    def peek(self, format: str = "GIF") -> str:
         """
         Generate a peek reaction.
         Args:
@@ -448,7 +448,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "peek", format)
 
-    def pinch(self, format: str = "GIF"):
+    def pinch(self, format: str = "GIF") -> str:
         """
         Generate a pinch reaction.
         Args:
@@ -458,7 +458,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "pinch", format)
 
-    def poke(self, format: str = "GIF"):
+    def poke(self, format: str = "GIF") -> str:
         """
         Generate a poke reaction.
         Args:
@@ -468,7 +468,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "poke", format)
 
-    def pout(self, format: str = "GIF"):
+    def pout(self, format: str = "GIF") -> str:
         """
         Generate a pout reaction.
         Args:
@@ -478,7 +478,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "pout", format)
 
-    def punch(self, format: str = "GIF"):
+    def punch(self, format: str = "GIF") -> str:
         """
         Generate a punch reaction.
         Args:
@@ -488,7 +488,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "punch", format)
 
-    def roll(self, format: str = "GIF"):
+    def roll(self, format: str = "GIF") -> str:
         """
         Generate a roll reaction.
         Args:
@@ -498,7 +498,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "roll", format)
 
-    def run(self, format: str = "GIF"):
+    def run(self, format: str = "GIF") -> str:
         """
         Generate a run reaction.
         Args:
@@ -508,7 +508,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "run", format)
 
-    def sad(self, format: str = "GIF"):
+    def sad(self, format: str = "GIF") -> str:
         """
         Generate a sad reaction.
         Args:
@@ -518,7 +518,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sad", format)
 
-    def scared(self, format: str = "GIF"):
+    def scared(self, format: str = "GIF") -> str:
         """
         Generate a scared reaction.
         Args:
@@ -528,7 +528,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "scared", format)
 
-    def shout(self, format: str = "GIF"):
+    def shout(self, format: str = "GIF") -> str:
         """
         Generate a shout reaction.
         Args:
@@ -538,7 +538,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "shout", format)
 
-    def shrug(self, format: str = "GIF"):
+    def shrug(self, format: str = "GIF") -> str:
         """
         Generate a shrug reaction.
         Args:
@@ -548,7 +548,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "shrug", format)
 
-    def shy(self, format: str = "GIF"):
+    def shy(self, format: str = "GIF") -> str:
         """
         Generate a shy reaction.
         Args:
@@ -558,7 +558,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "shy", format)
 
-    def sigh(self, format: str = "GIF"):
+    def sigh(self, format: str = "GIF") -> str:
         """
         Generate a sigh reaction.
         Args:
@@ -568,7 +568,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sigh", format)
 
-    def sip(self, format: str = "GIF"):
+    def sip(self, format: str = "GIF") -> str:
         """
         Generate a sip reaction.
         Args:
@@ -578,7 +578,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sip", format)
 
-    def slap(self, format: str = "GIF"):
+    def slap(self, format: str = "GIF") -> str:
         """
         Generate a slap reaction.
         Args:
@@ -588,7 +588,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "slap", format)
 
-    def sleep(self, format: str = "GIF"):
+    def sleep(self, format: str = "GIF") -> str:
         """
         Generate a sleep reaction.
         Args:
@@ -598,7 +598,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sleep", format)
 
-    def slowclap(self, format: str = "GIF"):
+    def slowclap(self, format: str = "GIF") -> str:
         """
         Generate a slowclap reaction.
         Args:
@@ -608,7 +608,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "slowclap", format)
 
-    def smack(self, format: str = "GIF"):
+    def smack(self, format: str = "GIF") -> str:
         """
         Generate a smack reaction.
         Args:
@@ -618,7 +618,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "smack", format)
 
-    def smile(self, format: str = "GIF"):
+    def smile(self, format: str = "GIF") -> str:
         """
         Generate a smile reaction.
         Args:
@@ -628,7 +628,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "smile", format)
 
-    def smug(self, format: str = "GIF"):
+    def smug(self, format: str = "GIF") -> str:
         """
         Generate a smug reaction.
         Args:
@@ -638,7 +638,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "smug", format)
 
-    def sneeze(self, format: str = "GIF"):
+    def sneeze(self, format: str = "GIF") -> str:
         """
         Generate a sneeze reaction.
         Args:
@@ -648,7 +648,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sneeze", format)
 
-    def sorry(self, format: str = "GIF"):
+    def sorry(self, format: str = "GIF") -> str:
         """
         Generate a sorry reaction.
         Args:
@@ -658,7 +658,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sorry", format)
 
-    def stare(self, format: str = "GIF"):
+    def stare(self, format: str = "GIF") -> str:
         """
         Generate a stare reaction.
         Args:
@@ -668,7 +668,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "stare", format)
 
-    def stop(self, format: str = "GIF"):
+    def stop(self, format: str = "GIF") -> str:
         """
         Generate a stop reaction.
         Args:
@@ -678,7 +678,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "stop", format)
 
-    def surprised(self, format: str = "GIF"):
+    def surprised(self, format: str = "GIF") -> str:
         """
         Generate a surprised reaction.
         Args:
@@ -688,7 +688,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "surprised", format)
 
-    def sweat(self, format: str = "GIF"):
+    def sweat(self, format: str = "GIF") -> str:
         """
         Generate a sweat reaction.
         Args:
@@ -698,7 +698,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "sweat", format)
 
-    def thumbsup(self, format: str = "GIF"):
+    def thumbsup(self, format: str = "GIF") -> str:
         """
         Generate a thumbsup reaction.
         Args:
@@ -708,7 +708,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "thumbsup", format)
 
-    def tickle(self, format: str = "GIF"):
+    def tickle(self, format: str = "GIF") -> str:
         """
         Generate a tickle reaction.
         Args:
@@ -718,7 +718,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "tickle", format)
 
-    def tired(self, format: str = "GIF"):
+    def tired(self, format: str = "GIF") -> str:
         """
         Generate a tired reaction.
         Args:
@@ -728,7 +728,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "tired", format)
 
-    def wave(self, format: str = "GIF"):
+    def wave(self, format: str = "GIF") -> str:
         """
         Generate a wave reaction.
         Args:
@@ -738,7 +738,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "wave", format)
 
-    def wink(self, format: str = "GIF"):
+    def wink(self, format: str = "GIF") -> str:
         """
         Generate a wink reaction.
         Args:
@@ -748,7 +748,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "wink", format)
 
-    def woah(self, format: str = "GIF"):
+    def woah(self, format: str = "GIF") -> str:
         """
         Generate a woah reaction.
         Args:
@@ -758,7 +758,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "woah", format)
 
-    def yawn(self, format: str = "GIF"):
+    def yawn(self, format: str = "GIF") -> str:
         """
         Generate a yawn reaction.
         Args:
@@ -768,7 +768,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "yawn", format)
 
-    def yay(self, format: str = "GIF"):
+    def yay(self, format: str = "GIF") -> str:
         """
         Generate a yay reaction.
         Args:
@@ -778,7 +778,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "yay", format)
 
-    def yes(self, format: str = "GIF"):
+    def yes(self, format: str = "GIF") -> str:
         """
         Generate a yes reaction.
         Args:
@@ -788,7 +788,7 @@ class OtakuGIFS:
         """
         return self._request("GET", "yes", format)
     
-    def list_reactions(self):
+    def list_reactions(self) -> list:
         """
         List all available reaction methods.
         Returns:
