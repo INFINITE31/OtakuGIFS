@@ -787,3 +787,11 @@ class OtakuGIFS:
             str: URL of the yes reaction image.
         """
         return self._request("GET", "yes", format)
+    
+    def list_reactions(self):
+        """
+        List all available reaction methods.
+        Returns:
+            list: A list of available reaction method names.
+        """
+        return [method for method in dir(self) if callable(getattr(self, method)) and not method.startswith("_") and method != "list_reactions"]

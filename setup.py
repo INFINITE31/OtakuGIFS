@@ -13,7 +13,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="OTAKUGIFS",
-    version="1.0.2",
+    version="1.0.3",
     author="INFINITE_.",
     author_email="work4infinite@gmail.com",
     description="A Python wrapper for the OtakuGIFS API",
