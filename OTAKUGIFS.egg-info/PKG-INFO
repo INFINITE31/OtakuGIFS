@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: OTAKUGIFS
-Version: 1.0.1
+Version: 1.0.2
 Summary: A Python wrapper for the OtakuGIFS API
 Home-page: https://github.com/infinite31/OTAKUGIFS
 Author: INFINITE_.
@@ -13,6 +13,7 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
+License-File: LICENSE
 Requires-Dist: httpx
 Dynamic: author
 Dynamic: author-email
@@ -21,6 +22,7 @@ Dynamic: description
 Dynamic: description-content-type
 Dynamic: home-page
 Dynamic: keywords
+Dynamic: license-file
 Dynamic: requires-dist
 Dynamic: requires-python
 Dynamic: summary
